@@ -1,0 +1,157 @@
+<DOCTYPE>
+<html>
+    <head>
+        <title>Projects</title>
+        <meta charset="utf-8">
+        <link href="resources/style.css" type="text/css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="container-project">
+        <nav>
+            <h1 class="nameTitle">FERNANDO PERRONE</h1>
+            <ul class="nav-button">
+                <li><a class="page" href="index.html">About me</a></li>
+                <li><a class="page" href="project.html">Projects</a></li>
+                <li><a class="page" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landPage" id="landPage">
+            <div id="sunLight"></div>
+            <div id="sun"></div>
+            <div class="cloud"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+            <div id="set-stars-1">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <div class="cloud4"></div>
+            <div class="cloud5"></div>
+            <div class="cloud6"></div>
+            <div class="moon"></div>
+            <time id="time"></time>
+            <h2>
+                <span id="greeting"></span>
+            </h2>
+        </div>
+        <div class="numberGuesser" id="numberGuesser">
+            <div class="title">
+                <h3>Number Guesser!</h3>
+            </div>
+            <div id="instructions">
+                <div class="steps">
+                    <h4>Step 1</h4>
+                    <p>Input number between 0 and 9</p>
+                </div>
+                <div class="steps">
+                    <h4>Step 2</h4>
+                    <p>Click the button <em>Make a guess</em> and see who won</p>
+                </div>
+                <div class="steps">
+                    <h4>Step 3</h4>
+                    <p>Click the button <em>Next Round</em> to play again</p>
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="rounds">
+                <p class="round-label">Round <span id="round-number">1</span></p>
+                <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+            </div>
+        
+            <div class="guessing-area">
+                <div class="guess computer-guess">
+                    <div class="guess-title">
+                        <p class="guess-label">Computer</p>
+                        <p class="score-label">Score: <span id="computer-score">0</span></p>
+                    </div>
+                    <p id="computer-guess">?</p>
+                    <p class="winning-text" id="computer-wins"></p>
+                </div>
+                <div class="guess human-guess">
+                    <div class="guess-title">
+                        <p class="guess-label">You</p>
+                        <p class="score-label">Score: <span id="human-score">0</span></p>
+                    </div>
+                    <input type="number" id="human-guess" min=0 max=9 value=0>
+                    <div class="number-controls">
+                        <button class="number-control left" id="subtract" disabled>-</button>
+                        <button class="number-control right" id="add">+</button>
+                    </div>
+                    <button class="button" id="guess">Make a Guess</button>
+                </div>
+            </div>
+            
+            <div class="next-round-container">
+                <button class="button" id="next-round" disabled>Next Round</button>
+            </div>
+        </div>
+        <div class="rhyme-container">
+            <div class="title-rhyme">
+                <h4 id="rhyme">Word Rhymes</h4>
+            </div>
+            <div class="rhyme-area">
+                <div id="enterWord">
+                    <h5>Enter a Word</h5>
+                </div>
+                <div class="rhy-cont">
+                    <form id="word-input" autocomplete="off">
+                        <input type="text" id="text-field" value="" />
+                        <button id="submit-button">SUBMIT</button>
+                    </form>
+                </div>
+                <div id="responseField"></div>
+            </div>
+            
+        </div>
+        <footer>
+            <p>Made by Fernando Perrone</p>
+        </footer>
+        <script src="resources/script.js"></script>
+        <script src="resources/game.js"></script>
+        <script src="resources/rhyme.js"></script>
+        <script src="resources/node_modules/animejs/lib/anime.min.js"></script>
+        <script src="resources/animation.js"></script>
+    </body>
+</html>
